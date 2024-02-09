@@ -1,0 +1,47 @@
+= reqstool-demo
+
+== Description
+This project act as a demo on how to integrate the Reqstool into you project. In this simple project, you are able to see how Reqstool can be used and how the different files relate to each other. 
+
+In this demo, we are showcasing how we define requirements and tests for a microservice, and also imports and implements requirements from an external system (ext-001)
+
+== Installation
+Tools needed to run the demo:
+
+* Java 21
+* Maven
+* Python 3.10 
+* Requirements Tool >= 0.3.0
+
+## Usage
+
+Before you can analyze the codebase with Reqstool, the project has to be built in order to generate the required annotation classes which will reside under the target folder of this project.
+
+From the root of you project, run:
+
+```bash
+mvn clean install
+```
+
+when the project is built and the tests are run (one of them are expected to fail), you can check the status of the project by running:
+
+```bash
+reqstool status local -p {root_of_project}/docs/requirements
+```
+
+If you would like to generate your requirement data as a asciidoc report file, you could run 
+
+```bash
+reqstool report-asciidoc local -p {root_of_project}/docs/requirements -o {path-to-file}filename.adoc
+```
+
+If you would like to generate your requirement data as a json file, you could run 
+
+```bash
+reqstool generate-json local -p {root_of_project}/docs/requirements -o {path-to-file}filename.adoc
+```
+
+
+
+## License
+include::partial$licence.adoc[]

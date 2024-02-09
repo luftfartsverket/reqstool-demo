@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Luftfartsverket/reqstool-client/main/src/reqstool/resources/schemas/v1/requirements.schema.json
+
+metadata:
+  urn: ext-001
+  variant: external
+  title: Some system Requirement Title
+  url: https://url.example.com
+
+requirements:
+  - id: REQ_100
+    title: Title REQ_100
+    significance: may
+    description: Description REQ_100
+    rationale: Rationale REQ_100
+    category: ["operational", "business"]
+    revision: 0.0.1

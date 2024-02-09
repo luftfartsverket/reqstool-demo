@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Luftfartsverket/reqstool-client/main/src/reqstool/resources/schemas/latest/requirements-config.schema.json
+
+type: java-maven # custom|java-maven|java-maven-docs|python-pyproject
+
