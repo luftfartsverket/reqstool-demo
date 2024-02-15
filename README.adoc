@@ -1,5 +1,6 @@
 
 image:https://img.shields.io/github/commit-activity/m/Luftfartsverket/reqstool-demo?label=commits&style=for-the-badge["Commit Activity", link="https://github.com/Luftfartsverket/reqstool-demo/pulse"]
 image:https://img.shields.io/github/issues/Luftfartsverket/reqstool-demo?style=for-the-badge&logo=github["GitHub Issues", link="https://github.com/Luftfartsverket/reqstool-demo/issues"]
+image:https://img.shields.io/badge/Java-21-brightgreen.svg?style=for-the-badge["JVM support", link="https://sdkman.io"]
 image:https://img.shields.io/github/license/Luftfartsverket/reqstool-demo?style=for-the-badge&logo=opensourceinitiative["License", link="https://opensource.org/license/mit/"]
 image:https://img.shields.io/github/actions/workflow/status/Luftfartsverket/reqstool-demo/build.yml?style=for-the-badge&logo=github["Build", link="https://github.com/Luftfartsverket/reqstool-demo/actions/workflows/build.yml"]
