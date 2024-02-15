@@ -4,5 +4,5 @@ image:https://img.shields.io/github/issues/Luftfartsverket/reqstool-demo?style=f
 image:https://img.shields.io/badge/Java-21-brightgreen.svg?style=for-the-badge["JVM support", link="https://sdkman.io"]
 image:https://img.shields.io/github/license/Luftfartsverket/reqstool-demo?style=for-the-badge&logo=opensourceinitiative["License", link="https://opensource.org/license/mit/"]
 image:https://img.shields.io/github/actions/workflow/status/Luftfartsverket/reqstool-demo/build.yml?style=for-the-badge&logo=github["Build", link="https://github.com/Luftfartsverket/reqstool-demo/actions/workflows/build.yml"]
-image:https://img.shields.io/badge/Docs-blue?style=for-the-badge&link=https%3A%2F%2Fluftfartsverket.github.io%2Freqstool-demo%2Freqstool-demo%2F0.0.1%2Findex.html[Static Badge]
+image:https://img.shields.io/badge/Docs-blue?style=for-the-badge&link=docs["Static Badge", link="https://luftfartsverket.github.io/reqstool-demo/reqstool-demo/0.0.1/index.html"]
 
