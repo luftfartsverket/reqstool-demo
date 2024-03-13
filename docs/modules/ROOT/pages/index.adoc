@@ -11,7 +11,7 @@ Tools needed to run the demo:
 * Java 21
 * Maven
 * Python 3.10 
-* Requirements Tool >= 0.3.0
+* Reqstool >= 0.3.0
 
 ## Usage
 
@@ -26,19 +26,19 @@ mvn clean install
 when the project is built and the tests are run (one of them are expected to fail), you can check the status of the project by running:
 
 ```bash
-reqstool status local -p {root_of_project}/docs/requirements
+reqstool status local -p {root_of_project}/docs/reqstool
 ```
 
 If you would like to generate your requirement data as a asciidoc report file, you could run 
 
 ```bash
-reqstool report-asciidoc local -p {root_of_project}/docs/requirements -o {path-to-file}filename.adoc
+reqstool report-asciidoc local -p {root_of_project}/docs/reqstool -o {path-to-file}filename.adoc
 ```
 
 If you would like to generate your requirement data as a json file, you could run 
 
 ```bash
-reqstool generate-json local -p {root_of_project}/docs/requirements -o {path-to-file}filename.adoc
+reqstool generate-json local -p {root_of_project}/docs/reqstool -o {path-to-file}filename.adoc
 ```
 
 

@@ -17,12 +17,12 @@ requirements:
     significance: may
     description: Description REQ_010
     rationale: Rationale REQ_010
-    category: ["operational", "business"]
+    categories: ["functional-suitability", "maintainability"]
     revision: 0.0.1
   - id: REQ_020
     title: Title REQ_020
     significance: may
     description: Description REQ_020
     rationale: Rationale REQ_020
-    category: ["operational", "business"]
+    categories: ["functional-suitability", "maintainability"]
     revision: 0.0.1
