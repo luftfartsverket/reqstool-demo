@@ -59,7 +59,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<datasetPath>${project.basedir}/docs/requirements</datasetPath>
+					<datasetPath>${project.basedir}/docs/reqstool</datasetPath>
 				</configuration>
 			</plugin>
 			<plugin>

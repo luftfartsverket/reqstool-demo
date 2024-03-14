@@ -12,5 +12,5 @@ requirements:
     significance: may
     description: Description REQ_100
     rationale: Rationale REQ_100
-    category: ["operational", "business"]
+    categories: ["functional-suitability", "maintainability"]
     revision: 0.0.1
