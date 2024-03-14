@@ -11,7 +11,7 @@ Tools needed to run the demo:
 * Java 21
 * Maven
 * Python 3.10 
-* Reqstool >= 0.3.0
+* Reqstool >= 0.4.0
 
 ## Usage
 
