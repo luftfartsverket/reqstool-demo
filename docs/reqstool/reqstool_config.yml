@@ -1,4 +1,12 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Luftfartsverket/reqstool-client/main/src/reqstool/resources/schemas/v1/reqstool_config.schema.json
 
-type: java-maven # custom|java-maven|python-pyproject
-
+language: java # custom|java-maven|python-pyproject
+build: maven
+resources:
+  requirements: requirements.yml
+  software_verification_cases: software_verification_cases.yml
+  manual_verification_results: manual_verification_results.yml
+  annotations: ../../target/reqstool/annotations.yml
+  test_results:
+    - ../../target/failsafe-reports/**/*.xml
+    - ../../target/surefire-reports/**/*.xml

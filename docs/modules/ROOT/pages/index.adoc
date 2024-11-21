@@ -11,7 +11,7 @@ Tools needed to run the demo:
 * Java 21
 * Maven
 * Python 3.10 
-* Reqstool >= 0.4.0
+* Reqstool >= 0.5.7
 
 ## Usage
 
@@ -38,7 +38,7 @@ reqstool report-asciidoc local -p {root_of_project}/docs/reqstool -o {path-to-fi
 If you would like to generate your requirement data as a json file, you could run 
 
 ```bash
-reqstool generate-json local -p {root_of_project}/docs/reqstool -o {path-to-file}filename.adoc
+reqstool generate-json local -p {root_of_project}/docs/reqstool -o {path-to-file}filename.json
 ```
 
 

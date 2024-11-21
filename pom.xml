@@ -23,7 +23,7 @@
 		<dependency>
 			<groupId>se.lfv.reqstool</groupId>
 			<artifactId>reqstool-java-annotations</artifactId>
-			<version>0.1.1</version>
+			<version>0.1.2</version>
 		</dependency>
 	</dependencies>
 
@@ -50,7 +50,7 @@
 			<plugin>
 				<groupId>se.lfv.reqstool</groupId>
 				<artifactId>reqstool-maven-plugin</artifactId>
-				<version>0.1.0</version>
+				<version>1.0.0</version>
 				<executions>
 					<execution>
 						<goals>
@@ -59,7 +59,13 @@
 					</execution>
 				</executions>
 				<configuration>
-					<datasetPath>${project.basedir}/docs/reqstool</datasetPath>
+					<datasetPath>
+						${project.basedir}/docs/reqstool
+					</datasetPath>
+					<testResults>
+						<testResult>target/surefire-reports/*.xml</testResult>
+						<testResult>target/failsafe-reports/*.xml</testResult>
+					</testResults>
 				</configuration>
 			</plugin>
 			<plugin>

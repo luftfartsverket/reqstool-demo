@@ -12,10 +12,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Build and run tests
+      - name: Check out source repository
+        uses: actions/checkout@v4
+      - name: Set up Java
         uses: actions/setup-java@v4
         with:
           java-version: "21"
           distribution: "temurin"
-      - run: mvn clean verify
+      - name: Build project
+        run: mvn clean verify
+      - name: Run reqstool status command
+        run: |
+          pip install reqstool
+          reqstool status local -p "$GITHUB_WORKSPACE"/docs/reqstool
