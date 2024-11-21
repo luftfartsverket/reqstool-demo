@@ -14,7 +14,7 @@ cases:
     revision: "0.0.1"
 
   - id: SVC_021
-    requirement_ids: ["REQ_010", "ext-001:REQ_100"]
+    requirement_ids: ["REQ_010"]
     title: "Some Title SVC_021"
     verification: manual-test
     revision: "0.0.1"

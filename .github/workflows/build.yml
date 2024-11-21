@@ -19,9 +19,7 @@ jobs:
           java-version: "21"
           distribution: "temurin"
       - run: mvn clean verify
-      - name: Run reqstool status command on reqstool.zip
+      - name: Run reqstool status command
         run: |
-          REQSTOOL_ZIP_FILE=$(ls target/reqstool/*.zip)
-          unzip "$REQSTOOL_ZIP_FILE"
           pip install reqstool
-          reqstool status local -p "$GITHUB_WORKSPACE"/reqstool-demo-0.0.2-reqstool
+          reqstool status local -p "$GITHUB_WORKSPACE"/docs/reqstool
