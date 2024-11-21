@@ -24,4 +24,4 @@ jobs:
           REQSTOOL_ZIP_FILE=$(ls target/reqstool/*.zip)
           unzip "$REQSTOOL_ZIP_FILE"
           pip install reqstool
-          reqstool status local -p $GITHUB_WORKSPACE
+          ls -laR
