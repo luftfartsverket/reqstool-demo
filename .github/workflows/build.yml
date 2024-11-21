@@ -22,6 +22,6 @@ jobs:
       - name: Run reqstool status command on reqstool.zip
         run: |
           REQSTOOL_ZIP_FILE=$(ls target/reqstool/*.zip)
-          unzip "$REQSTOOL_ZIP_FILE"
+          unzip "$REQSTOOL_ZIP_FILE" -d extracted_reqstool_zip
           pip install reqstool
-          ls -la "$GITHUB_WORKSPACE"
+          ls -laR "$GITHUB_WORKSPACE"
