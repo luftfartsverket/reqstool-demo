@@ -7,9 +7,9 @@ metadata:
   url: https://url.example.com
 
 # Import all requirements from local external system 001
-imports:
-  local:
-    - path: ./ext-001
+# imports:
+#   local:
+#     - path: ./docs/reqstool/ext-001
 
 requirements:
   - id: REQ_010
