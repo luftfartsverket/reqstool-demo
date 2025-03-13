@@ -1,0 +1,26 @@
+name: Publish Maven package to GitHub Packages
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Specify the branch, tag, or commit SHA to checkout"
+        required: true
+jobs:
+  publish:
+    name: Publish package to GitHub Packages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: "21"
+          distribution: "temurin"
+      - name: Publish package
+        run: |
+          ls -l
+          mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

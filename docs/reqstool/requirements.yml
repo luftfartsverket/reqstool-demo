@@ -4,7 +4,7 @@ metadata:
   urn: demo
   variant: microservice
   title: Some Microservice Requirement Title
-  url: https://url.example.com
+  url: https://github.com/Luftfartsverket/reqstool-demo
 
 # Import all requirements from local external system 001
 imports:
