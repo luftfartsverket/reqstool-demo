@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>se.lfv.reqstool</groupId>
 	<artifactId>reqstool-demo</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<name>reqstool-demo</name>
 	<description>Demo project using Requirements Tool</description>
 	<properties>

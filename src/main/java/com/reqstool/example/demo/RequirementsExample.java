@@ -5,7 +5,7 @@ import se.lfv.reqstool.annotations.Requirements;
 @Requirements({ "REQ_010", "REQ_020" })
 public class RequirementsExample {
 
-	@Requirements({ "REQ_010", "ext-001:REQ_100" })
+	@Requirements({ "REQ_010" })
 	public void firstMethod(float parameter) {
 		System.out.println("This is a parameter:" + parameter);
 	}

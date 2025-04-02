@@ -1,15 +1,15 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/Luftfartsverket/reqstool-client/main/src/reqstool/resources/schemas/v1/requirements.schema.json
 
 metadata:
-  urn: demo
+  urn: reqstool-demo
   variant: microservice
   title: Some Microservice Requirement Title
   url: https://github.com/Luftfartsverket/reqstool-demo
 
 # Import all requirements from local external system 001
-imports:
-  local:
-    - path: ./ext-001
+# imports:
+#   local:
+#     - path: ./ext-001
 
 requirements:
   - id: REQ_010
