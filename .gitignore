@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/java,maven
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,maven
+# Created by https://www.toptal.com/developers/gitignore/api/java,maven,gradle
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,maven,gradle
 
 ### Java ###
 # Compiled class file
@@ -7,6 +7,12 @@
 
 # Log file
 *.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -40,8 +46,29 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-# End of https://www.toptal.com/developers/gitignore/api/java,maven
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
 
-### VisualStudioCode ###
-.vscode/*
+# Ignore Gradle GUI config
+gradle-app.setting
 
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+# JDT-specific (Eclipse Java Development Tools)
+
+### Gradle Patch ###
+# Java heap dump
+*.hprof
+
+# End of https://www.toptal.com/developers/gitignore/api/java,maven,gradle
