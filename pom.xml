@@ -85,6 +85,13 @@
 				<configuration>
 					<source>21</source>
 					<target>21</target>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>se.lfv.reqstool</groupId>
+							<artifactId>reqstool-java-annotations</artifactId>
+							<version>0.1.4</version>
+						</path>
+					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
 		</plugins>
