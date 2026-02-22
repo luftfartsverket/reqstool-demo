@@ -28,13 +28,13 @@ repositories {
 
 dependencies {
     // Reqstool annotations
-    implementation 'se.lfv.reqstool:reqstool-java-annotations:0.1.4'
-    annotationProcessor 'se.lfv.reqstool:reqstool-java-annotations:0.1.4'
+    implementation 'se.lfv.reqstool:reqstool-java-annotations:0.1.5'
+    annotationProcessor 'se.lfv.reqstool:reqstool-java-annotations:0.1.5'
     
     // Test dependencies
     testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation 'org.junit.jupiter:junit-jupiter-api'
-    testAnnotationProcessor 'se.lfv.reqstool:reqstool-java-annotations:0.1.4'
+    testAnnotationProcessor 'se.lfv.reqstool:reqstool-java-annotations:0.1.5'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
