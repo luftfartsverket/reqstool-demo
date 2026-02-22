@@ -1,0 +1,61 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'se.lfv.reqstool:reqstool-gradle-plugin:0.1.0'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'se.lfv.reqstool'
+
+group = 'se.lfv.reqstool'
+version = '0.0.4'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Reqstool annotations
+    implementation 'se.lfv.reqstool:reqstool-java-annotations:0.1.4'
+    annotationProcessor 'se.lfv.reqstool:reqstool-java-annotations:0.1.4'
+    
+    // Test dependencies
+    testImplementation platform('org.junit:junit-bom:5.13.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testAnnotationProcessor 'se.lfv.reqstool:reqstool-java-annotations:0.1.4'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+    // Ignore test failures (matching Maven behavior)
+    ignoreFailures = true
+}
+
+requirementsTool {
+    datasetPath = file('docs/reqstool')
+    testResults = ['build/test-results/**/*.xml']
+}
+
+// Wire the assembleRequirements task into the build lifecycle
+// (similar to Maven's execution configuration)
+tasks.named('build') {
+    finalizedBy tasks.named('assembleRequirements')
+}
+
+tasks.named('assembleRequirements') {
+    dependsOn tasks.named('test')
+}
