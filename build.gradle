@@ -1,21 +1,10 @@
-buildscript {
-    repositories {
-        mavenLocal()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'se.lfv.reqstool:reqstool-gradle-plugin:0.1.0'
-    }
-}
-
 plugins {
     id 'java'
+    id 'io.github.reqstool.gradle-plugin' version '0.1.0'
 }
 
-apply plugin: 'se.lfv.reqstool'
-
-group = 'se.lfv.reqstool'
-version = '0.0.4'
+group = 'io.github.reqstool'
+version = '0.1.0'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
