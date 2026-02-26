@@ -2,14 +2,14 @@
 :toc:
 :toc-placement!:
 
-image:https://img.shields.io/github/commit-activity/m/Luftfartsverket/reqstool-demo?label=commits&style=for-the-badge["Commit Activity", link="https://github.com/Luftfartsverket/reqstool-demo/pulse"]
-image:https://img.shields.io/github/issues/Luftfartsverket/reqstool-demo?style=for-the-badge&logo=github["GitHub Issues", link="https://github.com/Luftfartsverket/reqstool-demo/issues"]
+image:https://img.shields.io/github/commit-activity/m/reqstool/reqstool-demo?label=commits&style=for-the-badge["Commit Activity", link="https://github.com/reqstool/reqstool-demo/pulse"]
+image:https://img.shields.io/github/issues/reqstool/reqstool-demo?style=for-the-badge&logo=github["GitHub Issues", link="https://github.com/reqstool/reqstool-demo/issues"]
 image:https://img.shields.io/badge/Java-21-brightgreen.svg?style=for-the-badge["JVM support", link="https://sdkman.io"]
-image:https://img.shields.io/github/license/Luftfartsverket/reqstool-demo?style=for-the-badge&logo=opensourceinitiative["License", link="https://opensource.org/license/mit/"]
-image:https://img.shields.io/github/actions/workflow/status/Luftfartsverket/reqstool-demo/build.yml?style=for-the-badge&logo=github["Build", link="https://github.com/Luftfartsverket/reqstool-demo/actions/workflows/build.yml"]
-image:https://img.shields.io/badge/Documentation-blue?style=for-the-badge&link=docs["Static Badge", link="https://luftfartsverket.github.io/reqstool-demo/reqstool-demo/0.0.1/index.html"]
+image:https://img.shields.io/github/license/reqstool/reqstool-demo?style=for-the-badge&logo=opensourceinitiative["License", link="https://opensource.org/license/mit/"]
+image:https://img.shields.io/github/actions/workflow/status/reqstool/reqstool-demo/build.yml?style=for-the-badge&logo=github["Build", link="https://github.com/reqstool/reqstool-demo/actions/workflows/build.yml"]
+image:https://img.shields.io/badge/Documentation-blue?style=for-the-badge&link=docs["Static Badge", link="https://reqstool.github.io/reqstool-demo/reqstool-demo/0.0.1/index.html"]
 
-Demo project showing how to use the link:https://github.com/Luftfartsverket/reqstool-java-maven-plugin[reqstool-maven-plugin] or link:https://github.com/Luftfartsverket/reqstool-gradle-plugin[reqstool-gradle-plugin] to create requirements traceability artifacts.
+Demo project showing how to use the link:https://github.com/reqstool/reqstool-java-maven-plugin[reqstool-maven-plugin] or link:https://github.com/reqstool/reqstool-gradle-plugin[reqstool-gradle-plugin] to create requirements traceability artifacts.
 
 toc::[]
 
@@ -350,7 +350,7 @@ MIT License - see link:LICENSE[LICENSE] file for details
 
 == Links
 
-* link:https://github.com/Luftfartsverket/reqstool-java-maven-plugin[reqstool-maven-plugin]
-* link:https://github.com/Luftfartsverket/reqstool-gradle-plugin[reqstool-gradle-plugin]
-* link:https://github.com/Luftfartsverket/reqstool-client[reqstool Python client]
-* link:https://luftfartsverket.github.io/reqstool-demo/reqstool-demo/0.0.1/index.html[Documentation]
+* link:https://github.com/reqstool/reqstool-java-maven-plugin[reqstool-maven-plugin]
+* link:https://github.com/reqstool/reqstool-gradle-plugin[reqstool-gradle-plugin]
+* link:https://github.com/reqstool/reqstool-client[reqstool Python client]
+* link:https://reqstool.github.io/reqstool-demo/reqstool-demo/0.0.1/index.html[Documentation]

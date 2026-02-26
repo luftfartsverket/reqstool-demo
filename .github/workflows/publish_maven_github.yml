@@ -20,7 +20,6 @@ jobs:
           distribution: "temurin"
       - name: Publish package
         run: |
-          ls -l
           mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

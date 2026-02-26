@@ -1,10 +1,10 @@
-package com.reqstool.example.demo;
+package io.github.reqstool.example.demo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import se.lfv.reqstool.annotations.SVCs;
+import io.github.reqstool.annotations.SVCs;
 
 class DemoApplicationTestsIT {
 

@@ -1,10 +1,10 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/Luftfartsverket/reqstool-client/main/src/reqstool/resources/schemas/v1/requirements.schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/reqstool/reqstool-client/main/src/reqstool/resources/schemas/v1/requirements.schema.json
 
 metadata:
   urn: reqstool-demo
   variant: microservice
   title: Some Microservice Requirement Title
-  url: https://github.com/Luftfartsverket/reqstool-demo
+  url: https://github.com/reqstool/reqstool-demo
 
 # Import all requirements from local external system 001
 # imports:
@@ -24,5 +24,12 @@ requirements:
     significance: may
     description: Description REQ_020
     rationale: Rationale REQ_020
+    categories: ["functional-suitability", "maintainability"]
+    revision: 0.0.1
+  - id: REQ_030
+    title: Title REQ_030
+    significance: may
+    description: Description REQ_030
+    rationale: Rationale REQ_030
     categories: ["functional-suitability", "maintainability"]
     revision: 0.0.1

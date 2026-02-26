@@ -2,7 +2,7 @@
 
 site:
   title: Reqstool Demo
-  url: https://github.com/luftfartsverket/reqstool-demo
+  url: https://github.com/reqstool/reqstool-demo
   start_page: reqstool-demo::index.adoc
 
 content:
