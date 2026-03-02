@@ -200,7 +200,7 @@ Used in implementation code to link code to requirements:
 
 [source,java]
 ----
-import se.lfv.reqstool.annotations.Requirements;
+import io.github.reqstool.annotations.Requirements;
 
 @Requirements({"REQ-001", "REQ-002"})
 public class MyClass {
@@ -210,11 +210,11 @@ public class MyClass {
 
 === @SVCs Annotation
 
-gottUsed in test code to link tests to Software Verification Cases:
+Used in test code to link tests to Software Verification Cases:
 
 [source,java]
 ----
-import se.lfv.reqstool.annotations.SVCs;
+import io.github.reqstool.annotations.SVCs;
 
 @Test
 @SVCs("SVC_010")
@@ -232,9 +232,9 @@ The reqstool-maven-plugin is configured in `pom.xml`:
 [source,xml]
 ----
 <plugin>
-    <groupId>se.lfv.reqstool</groupId>
+    <groupId>io.github.reqstool</groupId>
     <artifactId>reqstool-maven-plugin</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <executions>
         <execution>
             <goals>
@@ -262,17 +262,9 @@ The reqstool-gradle-plugin is configured in `build.gradle`:
 
 [source,gradle]
 ----
-buildscript {
-    repositories {
-        mavenLocal()  // For local development
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'se.lfv.reqstool:reqstool-gradle-plugin:0.1.0'
-    }
+plugins {
+    id 'io.github.reqstool.gradle-plugin' version '0.1.0'
 }
-
-apply plugin: 'se.lfv.reqstool'
 
 requirementsTool {
     datasetPath = file('docs/reqstool')
@@ -346,11 +338,4 @@ gradle publish
 
 == License
 
-MIT License - see link:LICENSE[LICENSE] file for details
-
-== Links
-
-* link:https://github.com/reqstool/reqstool-java-maven-plugin[reqstool-maven-plugin]
-* link:https://github.com/reqstool/reqstool-gradle-plugin[reqstool-gradle-plugin]
-* link:https://github.com/reqstool/reqstool-client[reqstool Python client]
-* link:https://reqstool.github.io/reqstool-demo/reqstool-demo/0.0.1/index.html[Documentation]
+MIT License.
