@@ -1,6 +1,6 @@
-package com.reqstool.example.demo;
+package io.github.reqstool.example.demo;
 
-import se.lfv.reqstool.annotations.Requirements;
+import io.github.reqstool.annotations.Requirements;
 
 @Requirements({ "REQ_010", "REQ_020" })
 public class RequirementsExample {

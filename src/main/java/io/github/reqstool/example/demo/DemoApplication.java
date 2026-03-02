@@ -1,4 +1,4 @@
-package com.reqstool.example.demo;
+package io.github.reqstool.example.demo;
 
 public class DemoApplication {
 

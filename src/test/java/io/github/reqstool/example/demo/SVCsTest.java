@@ -1,10 +1,10 @@
-package com.reqstool.example.demo;
+package io.github.reqstool.example.demo;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import se.lfv.reqstool.annotations.SVCs;
+import io.github.reqstool.annotations.SVCs;
 
 public class SVCsTest {
 
@@ -19,6 +19,13 @@ public class SVCsTest {
 	@SVCs("SVC_020")
 	@java.lang.SuppressWarnings("java:S2701")
 	public void testMethod2() {
+		assertTrue(true, "dummy test");
+	}
+
+	@Test
+	@SVCs("SVC_030")
+	@java.lang.SuppressWarnings("java:S2701")
+	public void testMethod3() {
 		assertTrue(true, "dummy test");
 	}
 

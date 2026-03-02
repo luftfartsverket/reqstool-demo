@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>se.lfv.reqstool</groupId>
+	<groupId>io.github.reqstool</groupId>
 	<artifactId>reqstool-demo</artifactId>
-	<version>0.0.4</version>
+	<version>0.1.0</version>
 	<name>reqstool-demo</name>
 	<description>Demo project using Requirements Tool</description>
 	<properties>
@@ -21,9 +21,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>se.lfv.reqstool</groupId>
+			<groupId>io.github.reqstool</groupId>
 			<artifactId>reqstool-java-annotations</artifactId>
-			<version>0.1.5</version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
@@ -31,7 +31,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/Luftfartsverket/reqstool-demo</url>
+			<url>https://maven.pkg.github.com/reqstool/reqstool-demo</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
@@ -59,9 +59,9 @@
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>se.lfv.reqstool</groupId>
+				<groupId>io.github.reqstool</groupId>
 				<artifactId>reqstool-maven-plugin</artifactId>
-				<version>1.0.3</version>
+				<version>1.0.4</version>
 				<executions>
 					<execution>
 						<goals>
@@ -87,9 +87,9 @@
 					<target>21</target>
 					<annotationProcessorPaths>
 						<path>
-							<groupId>se.lfv.reqstool</groupId>
+							<groupId>io.github.reqstool</groupId>
 							<artifactId>reqstool-java-annotations</artifactId>
-							<version>0.1.5</version>
+							<version>1.0.0</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
