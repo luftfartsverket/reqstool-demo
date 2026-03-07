@@ -18,6 +18,19 @@ This project demonstrates:
 - Integration with the reqstool Python client for requirements analysis
 - Support for both Maven and Gradle build systems
 
+## Demo Scenarios
+
+Each requirement ID is named to reflect the scenario it demonstrates:
+
+| Requirement ID | Scenario | What it demonstrates |
+|---|---|---|
+| `REQ_PASS` | Fully implemented & verified | Code annotated, automated tests pass, manual verification passes |
+| `REQ_MANUAL_FAIL` | Manual verification failed | Code annotated, automated tests pass, but manual verification reports a failure |
+| `REQ_NOT_IMPLEMENTED` | Not implemented | Requirement defined but no `@Requirements` annotation in code |
+| `REQ_FAILING_TEST` | Automated test fails | Code annotated, but the implementation has a bug causing the test to fail |
+| `REQ_SKIPPED_TEST` | Test is skipped | Code annotated, but the test is `@Disabled` (e.g. pending integration) |
+| `REQ_MISSING_TEST` | Test not written | Code annotated, SVC defined, but no `@SVCs` test exists for the SVC |
+
 ## Prerequisites
 
 - Java 21+

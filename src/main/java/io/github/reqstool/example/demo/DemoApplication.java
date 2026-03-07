@@ -4,8 +4,8 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		RequirementsExample example = new RequirementsExample();
-		example.firstMethod(10);
-		example.someMethod(15);
+		System.out.println(example.greet("World"));
+		System.out.println(example.calculateTotal(3, 9.99));
 	}
 
 }

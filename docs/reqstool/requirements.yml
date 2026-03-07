@@ -12,24 +12,45 @@ metadata:
 #     - path: ./ext-001
 
 requirements:
-  - id: REQ_010
-    title: Title REQ_010
-    significance: may
-    description: Description REQ_010
-    rationale: Rationale REQ_010
+  - id: REQ_PASS
+    title: Display greeting message
+    significance: shall
+    description: The system shall display a personalized greeting message based on a given name parameter.
+    rationale: Users need to receive a personalized greeting to confirm their identity when interacting with the system.
     categories: ["functional-suitability", "maintainability"]
     revision: 0.0.1
-  - id: REQ_020
-    title: Title REQ_020
-    significance: may
-    description: Description REQ_020
-    rationale: Rationale REQ_020
+  - id: REQ_MANUAL_FAIL
+    title: Calculate item total
+    significance: shall
+    description: The system shall calculate the total price for a given quantity of items.
+    rationale: Accurate price calculation is essential for correct billing and invoicing.
     categories: ["functional-suitability", "maintainability"]
     revision: 0.0.1
-  - id: REQ_030
-    title: Title REQ_030
+  - id: REQ_NOT_IMPLEMENTED
+    title: Export report as PDF
     significance: may
-    description: Description REQ_030
-    rationale: Rationale REQ_030
+    description: The system should support exporting reports in PDF format.
+    rationale: PDF export enables users to share and archive reports in a portable format.
     categories: ["functional-suitability", "maintainability"]
+    revision: 0.0.1
+  - id: REQ_FAILING_TEST
+    title: Validate email format
+    significance: shall
+    description: The system shall validate that a provided email address conforms to standard email format.
+    rationale: Ensuring valid email format prevents delivery failures and improves data quality.
+    categories: ["functional-suitability"]
+    revision: 0.0.1
+  - id: REQ_SKIPPED_TEST
+    title: Send notification via SMS
+    significance: may
+    description: The system should support sending notifications to users via SMS.
+    rationale: SMS notifications provide an alternative channel for time-sensitive alerts.
+    categories: ["functional-suitability"]
+    revision: 0.0.1
+  - id: REQ_MISSING_TEST
+    title: Generate audit log entry
+    significance: shall
+    description: The system shall generate an audit log entry for each user action.
+    rationale: Audit logging is required for compliance and security traceability.
+    categories: ["functional-suitability"]
     revision: 0.0.1
