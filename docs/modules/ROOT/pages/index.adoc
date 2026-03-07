@@ -1,47 +1,63 @@
-= reqstool-demo
+= Reqstool Demo
 
-== Description
-This project act as a demo on how to integrate the Reqstool into you project. In this simple project, you are able to see how Reqstool can be used and how the different files relate to each other. 
+This project acts as a demo on how to integrate Reqstool into your project. In this simple project, you are able to see how Reqstool can be used and how the different files relate to each other.
 
-In this demo, we are showcasing how we define requirements and tests for a microservice, and also imports and implements requirements from an external system (ext-001)
+In this demo, we are showcasing how we define requirements and tests for a microservice, and also imports and implements requirements from an external system (ext-001).
 
-== Installation
-Tools needed to run the demo:
+== Prerequisites
 
 * Java 21
-* Maven
-* Python 3.10 
-* Reqstool >= 0.5.7
+* Maven or Gradle
+* Python 3.10
+* Reqstool >= 0.5.7 (`pipx install reqstool`)
 
-## Usage
+== Usage
 
 Before you can analyze the codebase with Reqstool, the project has to be built in order to generate the required annotation classes which will reside under the target folder of this project.
 
-From the root of you project, run:
+=== Maven
 
-```bash
+From the root of your project, run:
+
+[source,bash]
+----
 mvn clean install
-```
+----
 
-when the project is built and the tests are run (one of them are expected to fail), you can check the status of the project by running:
+=== Gradle
 
-```bash
+From the root of your project, run:
+
+[source,bash]
+----
+gradle build
+----
+
+=== Check Status
+
+When the project is built and the tests are run (one of them is expected to fail), you can check the status of the project by running:
+
+[source,bash]
+----
 reqstool status local -p {root_of_project}/docs/reqstool
-```
+----
 
-If you would like to generate your requirement data as a asciidoc report file, you could run 
+=== Generate Reports
 
-```bash
+If you would like to generate your requirement data as an AsciiDoc report file:
+
+[source,bash]
+----
 reqstool report-asciidoc local -p {root_of_project}/docs/reqstool -o {path-to-file}filename.adoc
-```
+----
 
-If you would like to generate your requirement data as a json file, you could run 
+If you would like to generate your requirement data as a JSON file:
 
-```bash
-reqstool generate-json local -p {root_of_project}/docs/reqstool -o {path-to-file}filename.json
-```
+[source,bash]
+----
+reqstool export local -p {root_of_project}/docs/reqstool -o {path-to-file}filename.json
+----
 
+== License
 
-
-## License
-include::partial$licence.adoc[]
+MIT License.
