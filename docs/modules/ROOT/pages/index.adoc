@@ -1,6 +1,6 @@
-= Reqstool Demo
+= reqstool Demo
 
-This project acts as a demo on how to integrate Reqstool into your project. In this simple project, you are able to see how Reqstool can be used and how the different files relate to each other.
+This project acts as a demo on how to integrate reqstool into your project. In this simple project, you are able to see how reqstool can be used and how the different files relate to each other.
 
 In this demo, we are showcasing how we define requirements and tests for a microservice, and also imports and implements requirements from an external system (ext-001).
 
@@ -9,11 +9,11 @@ In this demo, we are showcasing how we define requirements and tests for a micro
 * Java 21
 * Maven or Gradle
 * Python 3.10
-* Reqstool >= 0.5.7 (`pipx install reqstool`)
+* reqstool >= 0.5.7 (`pipx install reqstool`)
 
 == Usage
 
-Before you can analyze the codebase with Reqstool, the project has to be built in order to generate the required annotation classes which will reside under the target folder of this project.
+Before you can analyze the codebase with reqstool, the project has to be built in order to generate the required annotation classes which will reside under the target folder of this project.
 
 === Maven
 
