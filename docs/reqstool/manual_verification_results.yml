@@ -3,9 +3,10 @@
 results:
   - id: MVR_201
     svc_ids: ["SVC_021"]
+    comment: Greeting message correctly displayed with user's name in the UI header.
     pass: true
 
   - id: MVR_202
     svc_ids: ["SVC_022"]
-    comment: Failed due...
+    comment: Failed due to rounding error - total shows 9.99 instead of 10.00 for 2x5.00 items.
     pass: false

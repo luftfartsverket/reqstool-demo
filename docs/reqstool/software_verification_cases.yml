@@ -2,31 +2,49 @@
 
 cases:
   - id: SVC_010
-    requirement_ids: ["REQ_010"]
-    title: "Some Title SVC_010"
+    requirement_ids: ["REQ_PASS"]
+    title: "Verify greeting message contains the provided name"
     verification: automated-test
     revision: "0.0.1"
 
   - id: SVC_020
-    requirement_ids: ["REQ_020"]
-    title: "Some Title SVC_102"
+    requirement_ids: ["REQ_MANUAL_FAIL"]
+    title: "Verify total price calculation for given quantity"
     verification: automated-test
     revision: "0.0.1"
 
   - id: SVC_021
-    requirement_ids: ["REQ_010"]
-    title: "Some Title SVC_021"
+    requirement_ids: ["REQ_PASS"]
+    title: "Manually verify greeting is displayed correctly in UI"
     verification: manual-test
     revision: "0.0.1"
 
   - id: SVC_022
-    requirement_ids: ["REQ_020"]
-    title: "Some Title SVC_022"
+    requirement_ids: ["REQ_MANUAL_FAIL"]
+    title: "Manually verify total price is shown on invoice page"
     verification: manual-test
     revision: "0.0.1"
 
   - id: SVC_030
-    requirement_ids: ["REQ_030"]
-    title: "Some Title SVC_030"
+    requirement_ids: ["REQ_NOT_IMPLEMENTED"]
+    title: "Verify PDF export produces a valid document"
+    verification: automated-test
+    revision: "0.0.1"
+
+  - id: SVC_040
+    requirement_ids: ["REQ_FAILING_TEST"]
+    title: "Verify email validation rejects invalid formats"
+    verification: automated-test
+    revision: "0.0.1"
+
+  - id: SVC_050
+    requirement_ids: ["REQ_SKIPPED_TEST"]
+    title: "Verify SMS notification is sent successfully"
+    verification: automated-test
+    revision: "0.0.1"
+
+  - id: SVC_060
+    requirement_ids: ["REQ_MISSING_TEST"]
+    title: "Verify audit log entry is created for user actions"
     verification: automated-test
     revision: "0.0.1"
