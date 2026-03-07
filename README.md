@@ -42,7 +42,7 @@ gradle clean build
 
 ```bash
 # Install reqstool client
-pip install -U reqstool
+pipx install reqstool
 
 # Run status report
 reqstool status local -p ./docs/reqstool
